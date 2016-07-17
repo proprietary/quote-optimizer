@@ -4,6 +4,8 @@
 ;; > (optimize-quotes ">>20>>21>>90>>22>>23>>24>>25>>26>>27>>28>>29")
 ;; ">>20-29,90"
 
+(require 'cl-lib)
+
 (defun parse-post-nums (str)
   (cond ((string= "" str)
          '())
